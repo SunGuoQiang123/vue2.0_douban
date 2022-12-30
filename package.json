@@ -74,7 +74,7 @@
     "karma-webpack": "^2.0.2",
     "lolex": "^1.5.2",
     "mixin-deep": "^2.0.1",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "nightwatch": "^1.2.2",
     "node-sass": "^4.5.3",
     "opn": "^4.0.2",
