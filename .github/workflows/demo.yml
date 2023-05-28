@@ -27,14 +27,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node_version: 14
-      - name: install dependencies
-        run: npm i
-      - name: build app
-        run: npm run build
       - name: deploy to github pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
-          build_dir: dist
+          build_dir: public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
