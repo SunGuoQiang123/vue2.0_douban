@@ -19,6 +19,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: install dependencies
+        run: npm i
       - name: build app
         run: npm run build
       - name: deploy to github pages
